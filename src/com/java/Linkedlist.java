@@ -80,4 +80,15 @@ public class LinkedList {
 		/* make next of prev_node as new_node */
 		prev_node.next = new_node;
 	}
+
+	/*
+	 * Deleting node from start of the linkedList
+	 */
+
+	public Node deleteNodeStart() {
+		System.out.println("Deleted node from start : " + head.data);
+		head = head.next;
+		return head;
+	}
+
 }
