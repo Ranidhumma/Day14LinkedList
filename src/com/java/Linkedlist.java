@@ -91,4 +91,16 @@ public class LinkedList {
 		return head;
 	}
 
+	public void deleteNodeEnd() {
+		/* creating pointer object assigning head to it */
+		Node pointer = head;
+		Node prev = null;
+
+		while (pointer.next != null) {
+			prev = pointer;
+			pointer = pointer.next;
+		}
+		System.out.println("Deleted node from end : " + pointer.data);
+		prev.next = null;
+	}
 }

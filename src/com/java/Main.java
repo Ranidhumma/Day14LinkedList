@@ -1,7 +1,6 @@
 package com.java;
 
 public class Main {
-	// public static Node head;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,7 +11,7 @@ public class Main {
 		list.addNodeLast(56);
 		list.addNodeLast(30);
 		list.addNodeLast(70);
-		list.deleteNodeStart();
+		list.deleteNodeEnd();
 		list.printLinkedList();
 
 	}
