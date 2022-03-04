@@ -65,4 +65,19 @@ public class LinkedList {
 		return;
 
 	}
+
+	public void insertMidAnywhere(Node prev_node, int new_data) {
+
+		if (prev_node == null) {
+			System.out.println("previousNode can not be Null,we can not insert ");
+			return;
+		}
+
+		Node new_node = new Node(new_data);
+		/* Make next of new Node as next of the prev_node */
+		new_node.next = prev_node.next;
+
+		/* make next of prev_node as new_node */
+		prev_node.next = new_node;
+	}
 }

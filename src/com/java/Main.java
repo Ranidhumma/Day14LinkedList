@@ -9,9 +9,8 @@ public class Main {
 		LinkedList list = new LinkedList();
 
 		list.addNodeLast(56);
-		list.addNodeLast(30);
 		list.addNodeLast(70);
-
+		list.insertMidAnywhere(list.head.next, 30);
 		list.printLinkedList();
 
 	}
