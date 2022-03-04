@@ -103,4 +103,15 @@ public class LinkedList {
 		System.out.println("Deleted node from end : " + pointer.data);
 		prev.next = null;
 	}
+
+	/* Search a */
+	boolean search(Node head, int key) {
+		Node current = head;
+		while (current != null) {
+			if (current.data == key)
+				return true;
+			current = current.next;
+		}
+		return false;
+	}
 }
