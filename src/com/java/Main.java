@@ -8,9 +8,9 @@ public class Main {
 		System.out.println("Welcome!!");
 		LinkedList list = new LinkedList();
 
-		list.addNodeStart(70);
-		list.addNodeStart(30);
-		list.addNodeStart(56);
+		list.addNodeLast(56);
+		list.addNodeLast(30);
+		list.addNodeLast(70);
 
 		list.printLinkedList();
 
