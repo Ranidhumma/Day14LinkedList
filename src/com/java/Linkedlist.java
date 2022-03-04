@@ -100,11 +100,11 @@ public class LinkedList {
 			prev = pointer;
 			pointer = pointer.next;
 		}
-		System.out.println("Deleted node from end : " + pointer.data);
+		System.out.println("Deleted node  from end : " + pointer.data);
 		prev.next = null;
 	}
 
-	/* Search a */
+	/* Search a key */
 	boolean search(Node head, int key) {
 		Node current = head;
 		while (current != null) {
